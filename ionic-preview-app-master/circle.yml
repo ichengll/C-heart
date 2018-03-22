@@ -1,0 +1,26 @@
+machine:
+  node:
+    version: 6.9.2
+
+general:
+  branches:
+    only:
+      - master # ignore PRs and branches
+
+dependencies:
+ pre:
+   - npm install -g cordova
+ post:
+   - ./scripts/prepare.sh
+ cache_directories:
+   - "~/ionic-site" # cache ionic-site
+
+test:
+  override:
+    - ./scripts/test.sh
+
+deployment:
+ staging:
+   branch: master
+   commands:
+     - ./scripts/deploy.sh
