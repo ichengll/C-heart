@@ -10,15 +10,15 @@ export class HomePage {
   slides = [
     {
       title: "轮播一",
-      image: "assets/imgs/2.jpeg",
+      image: "assets/imgs/2.jpeg"
     },
     {
       title: "轮播二",
-      image: "assets/imgs/2.jpg",
+      image: "assets/imgs/2.jpg"
     },
     {
       title: "轮播三",
-      image: "assets/imgs/6.jpg",
+      image: "assets/imgs/6.jpg"
     }
   ];
 
